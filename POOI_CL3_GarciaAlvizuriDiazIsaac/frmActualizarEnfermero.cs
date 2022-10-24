@@ -18,10 +18,10 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             InitializeComponent();
             cboEspecialidad.DataSource = objDAO.listarCboEspecialidad();
             cboEspecialidad.DisplayMember = "nom_esp";
-            cboEspecialidad.ValueMember = "ide_esp";//si es ide_esp el combobox se completa con el nombre de esp, si es nom_esp, irá el numero que representa la posición
+            cboEspecialidad.ValueMember = "ide_esp";
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnActualizar_Click_1(object sender, EventArgs e)
         {
             Enfermero objE = new Enfermero()
             {
@@ -35,8 +35,8 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             {
                 int n = objDAO.nuevoEnfermero(objE);
                 if (n == 1)
-                    MessageBox.Show(n + " Registro de vendedor ACTUALIZADO ");
-                    dgEnfermeros.DataSource = objDAO.listaEnfermeros();
+                    MessageBox.Show(n + "Registro de Enfermero ACTUALIZADO!");
+                dgEnfermeros.DataSource = objDAO.listaEnfermeros();
             }
             catch (Exception ex)
             {
@@ -60,6 +60,8 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             dgEnfermeros.DataSource = objDAO.listaEnfermeros();
         }
+
+        
     }
 }
 

@@ -54,6 +54,7 @@
             this.btnActualizar.TabIndex = 16;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click_1);
             // 
             // cboEspecialidad
             // 
