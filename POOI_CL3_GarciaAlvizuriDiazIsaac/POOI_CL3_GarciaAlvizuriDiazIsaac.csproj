@@ -50,8 +50,53 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="DAOEnfermero.cs" />
     <Compile Include="Enfermero.cs" />
+    <Compile Include="frmActualizarEnfermero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActualizarEnfermero.Designer.cs">
+      <DependentUpon>frmActualizarEnfermero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaEnfermeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaEnfermeros.Designer.cs">
+      <DependentUpon>frmListaEnfermeros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaEspecialidades.Designer.cs">
+      <DependentUpon>frmListaEspecialidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevoEnfermero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevoEnfermero.Designer.cs">
+      <DependentUpon>frmNuevoEnfermero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmActualizarEnfermero.resx">
+      <DependentUpon>frmActualizarEnfermero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaEnfermeros.resx">
+      <DependentUpon>frmListaEnfermeros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaEspecialidades.resx">
+      <DependentUpon>frmListaEspecialidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoEnfermero.resx">
+      <DependentUpon>frmNuevoEnfermero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
