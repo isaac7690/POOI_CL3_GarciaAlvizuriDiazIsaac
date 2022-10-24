@@ -56,7 +56,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             cn = objCon.getConecta();
             cn.Open();
-            SqlCommand cmd = new SqlCommand("SP_NUEVOENFERMERO", cn);
+            SqlCommand cmd = new SqlCommand("SP_ACTUALIZAENFERMERO", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@ide", objE.ide_enf);
             cmd.Parameters.AddWithValue("@nom", objE.nom_enf);

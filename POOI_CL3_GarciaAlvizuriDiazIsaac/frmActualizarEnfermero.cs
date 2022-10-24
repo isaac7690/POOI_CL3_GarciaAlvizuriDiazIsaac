@@ -33,7 +33,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             };
             try
             {
-                int n = objDAO.nuevoEnfermero(objE);
+                int n = objDAO.ActualizarEnfermero(objE);
                 if (n == 1)
                     MessageBox.Show(n + "Registro de Enfermero ACTUALIZADO!");
                 dgEnfermeros.DataSource = objDAO.listaEnfermeros();
