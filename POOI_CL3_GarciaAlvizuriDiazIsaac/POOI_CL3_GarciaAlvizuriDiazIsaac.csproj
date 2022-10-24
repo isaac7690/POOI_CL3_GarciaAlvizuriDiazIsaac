@@ -56,6 +56,12 @@
     <Compile Include="frmActualizarEnfermero.Designer.cs">
       <DependentUpon>frmActualizarEnfermero.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEnfermerosxEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnfermerosxEspecialidad.Designer.cs">
+      <DependentUpon>frmEnfermerosxEspecialidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListaEnfermeros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmActualizarEnfermero.resx">
       <DependentUpon>frmActualizarEnfermero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnfermerosxEspecialidad.resx">
+      <DependentUpon>frmEnfermerosxEspecialidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmListaEnfermeros.resx">
       <DependentUpon>frmListaEnfermeros.cs</DependentUpon>

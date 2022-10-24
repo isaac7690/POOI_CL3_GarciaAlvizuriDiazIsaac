@@ -41,7 +41,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.dgEnfermeros = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgEnfermeros)).BeginInit();
@@ -49,7 +48,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(179, 305);
+            this.btnActualizar.Location = new System.Drawing.Point(222, 300);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(151, 37);
             this.btnActualizar.TabIndex = 16;
@@ -60,37 +59,37 @@
             // 
             this.cboEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEspecialidad.FormattingEnabled = true;
-            this.cboEspecialidad.Location = new System.Drawing.Point(158, 264);
+            this.cboEspecialidad.Location = new System.Drawing.Point(222, 264);
             this.cboEspecialidad.Name = "cboEspecialidad";
-            this.cboEspecialidad.Size = new System.Drawing.Size(267, 21);
+            this.cboEspecialidad.Size = new System.Drawing.Size(224, 21);
             this.cboEspecialidad.TabIndex = 15;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(158, 219);
+            this.txtTelefono.Location = new System.Drawing.Point(222, 219);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(267, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(224, 20);
             this.txtTelefono.TabIndex = 12;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Location = new System.Drawing.Point(158, 174);
+            this.txtApellidos.Location = new System.Drawing.Point(222, 174);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(267, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(224, 20);
             this.txtApellidos.TabIndex = 13;
             // 
             // txtNombres
             // 
-            this.txtNombres.Location = new System.Drawing.Point(158, 132);
+            this.txtNombres.Location = new System.Drawing.Point(222, 132);
             this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(267, 20);
+            this.txtNombres.Size = new System.Drawing.Size(224, 20);
             this.txtNombres.TabIndex = 14;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 265);
+            this.label6.Location = new System.Drawing.Point(66, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 20);
             this.label6.TabIndex = 7;
@@ -100,7 +99,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(11, 219);
+            this.label5.Location = new System.Drawing.Point(66, 217);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 20);
             this.label5.TabIndex = 8;
@@ -110,7 +109,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 174);
+            this.label4.Location = new System.Drawing.Point(66, 174);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 20);
             this.label4.TabIndex = 9;
@@ -120,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 132);
+            this.label3.Location = new System.Drawing.Point(70, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 20);
             this.label3.TabIndex = 10;
@@ -130,7 +129,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 88);
+            this.label2.Location = new System.Drawing.Point(70, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 20);
             this.label2.TabIndex = 11;
@@ -142,7 +141,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(509, 62);
+            this.panel1.Size = new System.Drawing.Size(532, 62);
             this.panel1.TabIndex = 5;
             // 
             // label1
@@ -157,27 +156,18 @@
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(158, 88);
+            this.txtCodigo.Location = new System.Drawing.Point(222, 93);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(172, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(224, 20);
             this.txtCodigo.TabIndex = 17;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(358, 88);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(67, 30);
-            this.btnBuscar.TabIndex = 18;
-            this.btnBuscar.Text = "BUSCAR";
-            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // dgEnfermeros
             // 
             this.dgEnfermeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgEnfermeros.Location = new System.Drawing.Point(5, 359);
+            this.dgEnfermeros.Location = new System.Drawing.Point(3, 353);
             this.dgEnfermeros.Name = "dgEnfermeros";
-            this.dgEnfermeros.Size = new System.Drawing.Size(506, 215);
+            this.dgEnfermeros.Size = new System.Drawing.Size(532, 215);
             this.dgEnfermeros.TabIndex = 19;
             this.dgEnfermeros.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgEnfermeros_MouseDoubleClick);
             // 
@@ -185,9 +175,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 580);
+            this.ClientSize = new System.Drawing.Size(539, 580);
             this.Controls.Add(this.dgEnfermeros);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.cboEspecialidad);
@@ -227,7 +216,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodigo;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dgEnfermeros;
     }
 }

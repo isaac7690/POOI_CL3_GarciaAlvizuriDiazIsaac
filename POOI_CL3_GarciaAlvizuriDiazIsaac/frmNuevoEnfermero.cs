@@ -13,12 +13,16 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
     public partial class frmNuevoEnfermero : Form
     {
         DAOEnfermero objDAO = new DAOEnfermero();
+
         public frmNuevoEnfermero()
         {
             InitializeComponent();
             cboEspecialidad.DataSource = objDAO.listarCboEspecialidad();
             cboEspecialidad.DisplayMember = "nom_esp";
             cboEspecialidad.ValueMember = "ide_esp";
+            int n = objDAO.generaCodigo();
+            lblCodigo.Text = n.ToString("0000");
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -29,23 +33,19 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
                 ape_enf = txtApellidos.Text,
                 tel_enf = txtTelefono.Text,
                 ide_esp = int.Parse(cboEspecialidad.SelectedValue.ToString())
-            };
+
+        };
             try
             {
                 int n = objDAO.nuevoEnfermero(objE);
                 if (n == 1)
                     MessageBox.Show(n + " Registro de vendedor correcto ");
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void frmNuevoEnfermero_Load(object sender, EventArgs e)
-        {
-            int n = objDAO.generaCodigo();
-            lblCodigo.Text = n.ToString("0000");
         }
     }
 }

@@ -61,5 +61,16 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             childForm.MdiParent = this;
             childForm.Show();
         }
+
+        private void eNFERMEROSPORESPECIALIDADToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (Form childForm1 in MdiChildren)
+            {
+                childForm1.Close();
+            }
+            frmEnfermerosxEspecialidad childForm = new frmEnfermerosxEspecialidad();
+            childForm.MdiParent = this;
+            childForm.Show();
+        }
     }
 }

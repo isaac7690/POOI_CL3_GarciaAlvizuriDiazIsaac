@@ -112,7 +112,20 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             cn.Close();
             return dt;
         }
+        //lista de enfermeros x especialidad
+        public DataTable listaEnfermerosxEspecialidad(Enfermero objE)
+        {
+            cn = objCon.getConecta();
 
+            cn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SP_ENFERMEROSXESPECIALIDAD", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@esp", objE.ide_esp);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cn.Close();
+            return dt;
+        }
 
     }
 }
