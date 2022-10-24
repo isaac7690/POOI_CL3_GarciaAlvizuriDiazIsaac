@@ -18,7 +18,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             InitializeComponent();
             cboEspecialidad.DataSource = objDAO.listaEspecialidad();
             cboEspecialidad.DisplayMember = "nom_enf";
-            cboEspecialidad.ValueMember = "ide_esp";
+            cboEspecialidad.ValueMember = "nom_esp";//si es ide_esp el combobox se completa con el nombre de esp, si es ide_esp, irá el numero que representa la posición
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
