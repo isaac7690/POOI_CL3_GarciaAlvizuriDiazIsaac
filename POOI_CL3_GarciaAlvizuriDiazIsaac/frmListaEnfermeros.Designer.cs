@@ -70,6 +70,7 @@
             this.Controls.Add(this.dgEnfermeros);
             this.Controls.Add(this.panel1);
             this.Name = "frmListaEnfermeros";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListaEnfermeros";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -93,24 +93,28 @@
             this.lISTADODEESPECIALIDADESToolStripMenuItem.Name = "lISTADODEESPECIALIDADESToolStripMenuItem";
             this.lISTADODEESPECIALIDADESToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.lISTADODEESPECIALIDADESToolStripMenuItem.Text = "LISTADO DE ESPECIALIDADES";
+            this.lISTADODEESPECIALIDADESToolStripMenuItem.Click += new System.EventHandler(this.lISTADODEESPECIALIDADESToolStripMenuItem_Click);
             // 
             // lISTADODEENFERMEROSToolStripMenuItem
             // 
             this.lISTADODEENFERMEROSToolStripMenuItem.Name = "lISTADODEENFERMEROSToolStripMenuItem";
             this.lISTADODEENFERMEROSToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.lISTADODEENFERMEROSToolStripMenuItem.Text = "LISTADO DE ENFERMEROS";
+            this.lISTADODEENFERMEROSToolStripMenuItem.Click += new System.EventHandler(this.lISTADODEENFERMEROSToolStripMenuItem_Click);
             // 
             // nUEVOENFERMEROToolStripMenuItem
             // 
             this.nUEVOENFERMEROToolStripMenuItem.Name = "nUEVOENFERMEROToolStripMenuItem";
             this.nUEVOENFERMEROToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.nUEVOENFERMEROToolStripMenuItem.Text = "NUEVO ENFERMERO";
+            this.nUEVOENFERMEROToolStripMenuItem.Click += new System.EventHandler(this.NUEVOENFERMEROToolStripMenuItem_Click);
             // 
             // aCTUALIZARENFERMEROToolStripMenuItem
             // 
             this.aCTUALIZARENFERMEROToolStripMenuItem.Name = "aCTUALIZARENFERMEROToolStripMenuItem";
             this.aCTUALIZARENFERMEROToolStripMenuItem.Size = new System.Drawing.Size(213, 22);
             this.aCTUALIZARENFERMEROToolStripMenuItem.Text = "ACTUALIZAR ENFERMERO";
+            this.aCTUALIZARENFERMEROToolStripMenuItem.Click += new System.EventHandler(this.ACTUALIZARENFERMEROToolStripMenuItem_Click);
             // 
             // MenuPrincipal
             // 
@@ -123,6 +127,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);

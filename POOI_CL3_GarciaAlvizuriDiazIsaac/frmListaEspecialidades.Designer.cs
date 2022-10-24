@@ -70,6 +70,7 @@
             this.Controls.Add(this.dgEspecialidaes);
             this.Controls.Add(this.panel1);
             this.Name = "frmListaEspecialidades";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListaEspecialidades";
             ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidaes)).EndInit();
             this.panel1.ResumeLayout(false);

@@ -18,90 +18,50 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             InitializeComponent();
         }
+      
 
-        private void ShowNewForm(object sender, EventArgs e)
+        private void lISTADODEESPECIALIDADESToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form childForm = new Form();
+            foreach (Form childForm1 in MdiChildren)
+            {
+                childForm1.Close();
+            }
+            frmListaEspecialidades childForm = new frmListaEspecialidades();
             childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
             childForm.Show();
         }
 
-        private void OpenFile(object sender, EventArgs e)
+        private void lISTADODEENFERMEROSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+            foreach (Form childForm1 in MdiChildren)
             {
-                string FileName = openFileDialog.FileName;
+                childForm1.Close();
             }
+            frmListaEnfermeros childForm = new frmListaEnfermeros();
+            childForm.MdiParent = this;
+            childForm.Show();
         }
 
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ACTUALIZARENFERMEROToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+            foreach (Form childForm1 in MdiChildren)
             {
-                string FileName = saveFileDialog.FileName;
+                childForm1.Close();
             }
+            frmActualizarEnfermero childForm = new frmActualizarEnfermero();
+            childForm.MdiParent = this;
+            childForm.Show();
         }
 
-        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
+        private void NUEVOENFERMEROToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
-        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.Cascade);
-        }
-
-        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
-
-        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LayoutMdi(MdiLayout.ArrangeIcons);
-        }
-
-        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            foreach (Form childForm in MdiChildren)
+            foreach (Form childForm1 in MdiChildren)
             {
-                childForm.Close();
+                childForm1.Close();
             }
+            frmNuevoEnfermero childForm = new frmNuevoEnfermero();
+            childForm.MdiParent = this;
+            childForm.Show();
         }
     }
 }
