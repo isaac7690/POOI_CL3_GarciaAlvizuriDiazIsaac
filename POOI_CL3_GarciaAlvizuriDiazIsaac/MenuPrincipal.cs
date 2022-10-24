@@ -12,8 +12,6 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
 {
     public partial class MenuPrincipal : Form
     {
-        private int childFormNumber = 0;
-
         public MenuPrincipal()
         {
             InitializeComponent();

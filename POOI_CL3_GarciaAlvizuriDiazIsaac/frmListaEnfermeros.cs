@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace POOI_CL3_GarciaAlvizuriDiazIsaac
 {
     public partial class frmListaEnfermeros : Form
     {
+        DAOEnfermero objDAO = new DAOEnfermero();
         public frmListaEnfermeros()
         {
             InitializeComponent();
