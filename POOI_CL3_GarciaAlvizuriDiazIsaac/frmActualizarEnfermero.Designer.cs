@@ -53,6 +53,7 @@
             this.btnActualizar.TabIndex = 16;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            //this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // cboEspecialidad
             // 
@@ -137,16 +138,16 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 12);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(509, 63);
+            this.panel1.Size = new System.Drawing.Size(509, 62);
             this.panel1.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(68, 13);
+            this.label1.Location = new System.Drawing.Point(61, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(395, 35);
             this.label1.TabIndex = 0;

@@ -16,5 +16,12 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             InitializeComponent();
         }
+
+        private void frmListaEspecialidades_Load(object sender, EventArgs e)
+        {
+            DAOEnfermero objDAO = new DAOEnfermero();
+            dgEspecialidades.DataSource = objDAO.listaEspecialidad();
+            dgEspecialidades.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
     }
 }

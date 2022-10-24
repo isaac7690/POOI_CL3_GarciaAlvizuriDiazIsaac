@@ -18,5 +18,12 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             InitializeComponent();
         }
+
+        private void frmListaEnfermeros_Load(object sender, EventArgs e)
+        {
+            DAOEnfermero objDAO = new DAOEnfermero();
+            dgEnfermeros.DataSource = objDAO.listaEnfermeros();
+            dgEnfermeros.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
     }
 }

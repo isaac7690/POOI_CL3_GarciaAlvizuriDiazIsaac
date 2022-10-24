@@ -16,5 +16,30 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         {
             InitializeComponent();
         }
+
+       /* private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            Enfermero objV = new Vendedor()
+            {
+                ide_ven = int.Parse(txtCodigo.Text),
+                nom_ven = txtNombres.Text,
+                ape_ven = txtApellidos.Text,
+                sue_ven = double.Parse(txtSueldo.Text),
+                fec_ing = dtFecha.Value,
+                ide_dis = int.Parse(cboEspecialidad.SelectedValue.ToString())
+            };
+            try
+            {
+                int n = objDAO.nuevoVendedor(objV);
+                if (n == 1)
+                    MessageBox.Show(n + " Registro de vendedor ACTUALIZADO ");
+                dgVendedores.DataSource = objDAO.listadoVendedores();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }*/
     }
 }

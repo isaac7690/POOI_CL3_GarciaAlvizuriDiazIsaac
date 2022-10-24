@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgEspecialidaes = new System.Windows.Forms.DataGridView();
+            this.dgEspecialidades = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidaes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidades)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgEspecialidaes
+            // dgEspecialidades
             // 
-            this.dgEspecialidaes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgEspecialidaes.Location = new System.Drawing.Point(5, 70);
-            this.dgEspecialidaes.Name = "dgEspecialidaes";
-            this.dgEspecialidaes.Size = new System.Drawing.Size(576, 370);
-            this.dgEspecialidaes.TabIndex = 3;
+            this.dgEspecialidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEspecialidades.Location = new System.Drawing.Point(5, 70);
+            this.dgEspecialidades.Name = "dgEspecialidades";
+            this.dgEspecialidades.Size = new System.Drawing.Size(576, 370);
+            this.dgEspecialidades.TabIndex = 3;
             // 
             // panel1
             // 
@@ -67,12 +67,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 447);
-            this.Controls.Add(this.dgEspecialidaes);
+            this.Controls.Add(this.dgEspecialidades);
             this.Controls.Add(this.panel1);
             this.Name = "frmListaEspecialidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmListaEspecialidades";
-            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidaes)).EndInit();
+            this.Load += new System.EventHandler(this.frmListaEspecialidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgEspecialidades)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -81,7 +82,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgEspecialidaes;
+        private System.Windows.Forms.DataGridView dgEspecialidades;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
     }

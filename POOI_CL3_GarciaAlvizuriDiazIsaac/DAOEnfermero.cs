@@ -68,7 +68,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         }
 
         //4.NuevoEnfermero
-        public int NuevoEnfermero(Enfermero objE)
+        public int nuevoEnfermero(Enfermero objE)
         {
             cn = objCon.getConecta();
             cn.Open();

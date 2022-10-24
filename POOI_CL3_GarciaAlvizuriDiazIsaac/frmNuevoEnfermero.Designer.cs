@@ -160,6 +160,7 @@
             this.btnRegistrar.TabIndex = 4;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // frmNuevoEnfermero
             // 
@@ -181,6 +182,7 @@
             this.Name = "frmNuevoEnfermero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNuevoEnfermero";
+            this.Load += new System.EventHandler(this.frmNuevoEnfermero_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
