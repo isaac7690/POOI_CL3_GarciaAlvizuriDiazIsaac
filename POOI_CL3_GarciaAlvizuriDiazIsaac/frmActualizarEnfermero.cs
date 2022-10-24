@@ -59,9 +59,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         private void frmActualizarEnfermero_Load(object sender, EventArgs e)
         {
             dgEnfermeros.DataSource = objDAO.listaEnfermeros();
-        }
-
-        
+        }       
     }
 }
 
