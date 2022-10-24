@@ -12,34 +12,54 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
 {
     public partial class frmActualizarEnfermero : Form
     {
+        DAOEnfermero objDAO = new DAOEnfermero();
         public frmActualizarEnfermero()
         {
             InitializeComponent();
+            cboEspecialidad.DataSource = objDAO.listaEspecialidad();
+            cboEspecialidad.DisplayMember = "nom_enf";
+            cboEspecialidad.ValueMember = "ide_esp";
         }
 
-       /* private void btnActualizar_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            Enfermero objV = new Vendedor()
+            Enfermero objE = new Enfermero()
             {
-                ide_ven = int.Parse(txtCodigo.Text),
-                nom_ven = txtNombres.Text,
-                ape_ven = txtApellidos.Text,
-                sue_ven = double.Parse(txtSueldo.Text),
-                fec_ing = dtFecha.Value,
-                ide_dis = int.Parse(cboEspecialidad.SelectedValue.ToString())
+                ide_enf = int.Parse(txtCodigo.Text),
+                nom_enf = txtNombres.Text,
+                ape_enf = txtApellidos.Text,
+                tel_enf = txtTelefono.Text,
+                ide_esp = int.Parse(cboEspecialidad.SelectedValue.ToString())
             };
             try
             {
-                int n = objDAO.nuevoVendedor(objV);
+                int n = objDAO.nuevoEnfermero(objE);
                 if (n == 1)
                     MessageBox.Show(n + " Registro de vendedor ACTUALIZADO ");
-                dgVendedores.DataSource = objDAO.listadoVendedores();
+                    dgEnfermeros.DataSource = objDAO.listaEnfermeros();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-    }*/
+
+        private void dgEnfermeros_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int codigo = int.Parse(dgEnfermeros.CurrentRow.Cells[0].Value.ToString());
+
+            DataRow dr = objDAO.buscarEnfermeros(codigo).Rows[0];
+            txtCodigo.Text = dr[0].ToString();
+            txtNombres.Text = dr[1].ToString();
+            txtApellidos.Text = dr[2].ToString();
+            txtTelefono.Text = dr[3].ToString();
+            cboEspecialidad.Text = dr[4].ToString();
+        }
+
+        private void frmActualizarEnfermero_Load(object sender, EventArgs e)
+        {
+            dgEnfermeros.DataSource = objDAO.listaEnfermeros();
+        }
     }
 }
+

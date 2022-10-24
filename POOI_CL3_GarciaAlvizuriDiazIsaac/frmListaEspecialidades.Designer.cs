@@ -40,7 +40,7 @@
             this.dgEspecialidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgEspecialidades.Location = new System.Drawing.Point(5, 70);
             this.dgEspecialidades.Name = "dgEspecialidades";
-            this.dgEspecialidades.Size = new System.Drawing.Size(576, 370);
+            this.dgEspecialidades.Size = new System.Drawing.Size(261, 187);
             this.dgEspecialidades.TabIndex = 3;
             // 
             // panel1
@@ -49,16 +49,16 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(5, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(576, 63);
+            this.panel1.Size = new System.Drawing.Size(261, 63);
             this.panel1.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 8);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(483, 35);
+            this.label1.Size = new System.Drawing.Size(248, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "RELACIÓN DE ESPECIALIDADES";
             // 
@@ -66,7 +66,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(588, 447);
+            this.ClientSize = new System.Drawing.Size(271, 267);
             this.Controls.Add(this.dgEspecialidades);
             this.Controls.Add(this.panel1);
             this.Name = "frmListaEspecialidades";

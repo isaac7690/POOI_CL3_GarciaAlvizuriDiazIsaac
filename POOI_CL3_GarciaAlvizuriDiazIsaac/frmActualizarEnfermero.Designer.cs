@@ -42,18 +42,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.dgEnfermeros = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEnfermeros)).BeginInit();
             this.SuspendLayout();
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(178, 316);
+            this.btnActualizar.Location = new System.Drawing.Point(179, 305);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(151, 37);
             this.btnActualizar.TabIndex = 16;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
-            //this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // cboEspecialidad
             // 
@@ -157,6 +158,7 @@
             // 
             this.txtCodigo.Location = new System.Drawing.Point(158, 88);
             this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(172, 20);
             this.txtCodigo.TabIndex = 17;
             // 
@@ -169,11 +171,21 @@
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
+            // dgEnfermeros
+            // 
+            this.dgEnfermeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgEnfermeros.Location = new System.Drawing.Point(5, 359);
+            this.dgEnfermeros.Name = "dgEnfermeros";
+            this.dgEnfermeros.Size = new System.Drawing.Size(506, 215);
+            this.dgEnfermeros.TabIndex = 19;
+            this.dgEnfermeros.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dgEnfermeros_MouseDoubleClick);
+            // 
             // frmActualizarEnfermero
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 374);
+            this.ClientSize = new System.Drawing.Size(517, 580);
+            this.Controls.Add(this.dgEnfermeros);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btnActualizar);
@@ -190,8 +202,10 @@
             this.Name = "frmActualizarEnfermero";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmActualizarEnfermero";
+            this.Load += new System.EventHandler(this.frmActualizarEnfermero_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgEnfermeros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +227,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridView dgEnfermeros;
     }
 }

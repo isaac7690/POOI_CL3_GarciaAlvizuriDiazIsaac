@@ -90,11 +90,20 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             cn.Close();
             return 0;
         }
-
+        public DataTable buscarEnfermeros(int ide)
+        {
+            cn = objCon.getConecta();
+            cn.Open();
+            SqlDataAdapter da = new SqlDataAdapter("SP_BUSQUEDAENFERMERO", cn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            //da.SelectCommand.Parameters.Add("@ide",SqlDbType.Int).Value=ide;
+            da.SelectCommand.Parameters.AddWithValue("@ide", ide);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            cn.Close();
+            return dt;
+        }
 
 
     }
-    
-
-
 }
