@@ -16,9 +16,9 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         public frmActualizarEnfermero()
         {
             InitializeComponent();
-            cboEspecialidad.DataSource = objDAO.listaEspecialidad();
-            cboEspecialidad.DisplayMember = "nom_enf";
-            cboEspecialidad.ValueMember = "nom_esp";//si es ide_esp el combobox se completa con el nombre de esp, si es ide_esp, irá el numero que representa la posición
+            cboEspecialidad.DataSource = objDAO.listarCboEspecialidad();
+            cboEspecialidad.DisplayMember = "nom_esp";
+            cboEspecialidad.ValueMember = "ide_esp";//si es ide_esp el combobox se completa con el nombre de esp, si es nom_esp, irá el numero que representa la posición
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)

@@ -41,6 +41,15 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
             da.Fill(dt);
             return dt;
         }
+        //CBOBOX ESPECIALIDAD
+        public DataTable listarCboEspecialidad()
+        {
+            cn = objCon.getConecta();
+            SqlDataAdapter da = new SqlDataAdapter("SP_CBOESPECIALIDAD", cn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
 
         //3.ActualizarEnfermero
         public int ActualizarEnfermero(Enfermero objE)

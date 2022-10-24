@@ -16,7 +16,7 @@ namespace POOI_CL3_GarciaAlvizuriDiazIsaac
         public frmNuevoEnfermero()
         {
             InitializeComponent();
-            cboEspecialidad.DataSource = objDAO.listaEspecialidad();
+            cboEspecialidad.DataSource = objDAO.listarCboEspecialidad();
             cboEspecialidad.DisplayMember = "nom_esp";
             cboEspecialidad.ValueMember = "ide_esp";
         }
