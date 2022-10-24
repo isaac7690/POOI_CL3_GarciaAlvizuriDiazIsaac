@@ -146,6 +146,7 @@
             // 
             // cboEspecialidad
             // 
+            this.cboEspecialidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboEspecialidad.FormattingEnabled = true;
             this.cboEspecialidad.Location = new System.Drawing.Point(159, 256);
             this.cboEspecialidad.Name = "cboEspecialidad";
